@@ -23,6 +23,11 @@ class ArrayQueue : public Queue<T> {
         // copy the values from the argument queue to `this`
         void copy(const ArrayQueue<T>&);
 
+        int length;
+
+        
+        T* data;
+
     public:
         // constructor with the maximum size as the argument
         ArrayQueue(int = 100);
